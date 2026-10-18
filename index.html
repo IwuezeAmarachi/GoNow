@@ -58,32 +58,48 @@
 
     <!-- ============ LOGOS ============ -->
     <section class="logos" aria-label="Trusted by">
-      <div class="logos__rows">
-        <ul class="logos__row">
-          <li><img src="assets/co-0.svg" alt="" width="100" height="25" loading="lazy"></li>
-          <li><img src="assets/co-1.svg" alt="" width="100" height="24" loading="lazy"></li>
-          <li><img src="assets/co-2.svg" alt="" width="100" height="30" loading="lazy"></li>
-          <li><img src="assets/co-3.svg" alt="" width="100" height="27" loading="lazy"></li>
-          <li><img src="assets/co-4.svg" alt="" width="100" height="27" loading="lazy"></li>
-          <li><img src="assets/co-5.svg" alt="" width="100" height="24" loading="lazy"></li>
-          <li><img src="assets/co-6.svg" alt="" width="100" height="24" loading="lazy"></li>
-          <li><img src="assets/co-7.svg" alt="" width="106" height="24" loading="lazy"></li>
-          <li><img src="assets/co-8.svg" alt="" width="83" height="24" loading="lazy"></li>
-          <li><img src="assets/co-9.svg" alt="" width="92" height="24" loading="lazy"></li>
-        </ul>
-        <ul class="logos__row">
-          <li><img src="assets/co-10.svg" alt="" width="100" height="26" loading="lazy"></li>
-          <li><img src="assets/co-11.svg" alt="" width="100" height="27" loading="lazy"></li>
-          <li><img src="assets/co-12.svg" alt="" width="100" height="24" loading="lazy"></li>
-          <li><img src="assets/co-13.svg" alt="" width="100" height="25" loading="lazy"></li>
-          <li><img src="assets/co-14.svg" alt="" width="100" height="29" loading="lazy"></li>
-          <li><img src="assets/co-15.svg" alt="" width="100" height="28" loading="lazy"></li>
-          <li><img src="assets/co-16.svg" alt="" width="100" height="29" loading="lazy"></li>
-          <li><img src="assets/co-17.svg" alt="" width="100" height="27" loading="lazy"></li>
-          <li><img src="assets/co-18.svg" alt="" width="100" height="33" loading="lazy"></li>
-          <li><img src="assets/co-16.svg" alt="" width="100" height="29" loading="lazy"></li>
-        </ul>
-      </div>
+      <ul class="logos__slots">
+          <li class="logo-slot" style="--i:0">
+            <img class="a" src="assets/co-0.svg" alt="" width="100" height="25" loading="lazy">
+            <img class="b" src="assets/co-10.svg" alt="" width="100" height="26" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:1">
+            <img class="a" src="assets/co-1.svg" alt="" width="100" height="24" loading="lazy">
+            <img class="b" src="assets/co-11.svg" alt="" width="100" height="27" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:2">
+            <img class="a" src="assets/co-2.svg" alt="" width="100" height="30" loading="lazy">
+            <img class="b" src="assets/co-12.svg" alt="" width="100" height="24" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:3">
+            <img class="a" src="assets/co-3.svg" alt="" width="100" height="27" loading="lazy">
+            <img class="b" src="assets/co-13.svg" alt="" width="100" height="25" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:4">
+            <img class="a" src="assets/co-4.svg" alt="" width="100" height="27" loading="lazy">
+            <img class="b" src="assets/co-14.svg" alt="" width="100" height="29" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:5">
+            <img class="a" src="assets/co-5.svg" alt="" width="100" height="24" loading="lazy">
+            <img class="b" src="assets/co-15.svg" alt="" width="100" height="28" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:6">
+            <img class="a" src="assets/co-6.svg" alt="" width="100" height="24" loading="lazy">
+            <img class="b" src="assets/co-16.svg" alt="" width="100" height="29" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:7">
+            <img class="a" src="assets/co-7.svg" alt="" width="106" height="24" loading="lazy">
+            <img class="b" src="assets/co-17.svg" alt="" width="100" height="27" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:8">
+            <img class="a" src="assets/co-8.svg" alt="" width="83" height="24" loading="lazy">
+            <img class="b" src="assets/co-18.svg" alt="" width="100" height="33" loading="lazy">
+          </li>
+          <li class="logo-slot" style="--i:9">
+            <img class="a" src="assets/co-9.svg" alt="" width="92" height="24" loading="lazy">
+            <img class="b" src="assets/co-16.svg" alt="" width="100" height="29" loading="lazy">
+          </li>
+      </ul>
     </section>
 
     <!-- ============ PROBLEM ============ -->
@@ -137,7 +153,19 @@
 
       <div class="step step--2">
         <img class="step__pat step__pat--r" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async">
-        <div class="step__img"><img class="step__pat" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async"><img class="step__pic" data-parallax src="assets/how-2.webp" alt="" loading="lazy" decoding="async"></div>
+        <div class="step__img"><img class="step__pat" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async">
+          <div class="step__art step__art--ride" data-parallax>
+            <img src="assets/how-2.webp" alt="A cyclist riding along a route on a phone screen" loading="lazy" decoding="async">
+            <svg class="belt" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <defs><clipPath id="lane"><polygon points="59.8,33 69.3,34.4 51.1,77.3 32.9,82.4"/></clipPath></defs>
+              <g clip-path="url(#lane)">
+                <path class="belt__l" d="M64.5 33 L42 80"/>
+                <path class="belt__l belt__l--2" d="M60 33 L37.5 80"/>
+                <path class="belt__l belt__l--2" d="M69 33 L46.5 80"/>
+              </g>
+            </svg>
+          </div>
+        </div>
         <div class="step__txt reveal"><span class="step__n">Step 2</span><h3>Track Your Ride</h3><p>Follow your bus live on the map with clear route guidance and estimated arrival times, so you always know where you are and what’s next.</p></div>
       </div>
 
