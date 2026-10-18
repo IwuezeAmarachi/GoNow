@@ -140,11 +140,8 @@ ul{list-style:none}
 .fcard p{margin-top:20px;max-width:327px;font-size:max(16px,calc(var(--u)*20));line-height:1.3;letter-spacing:-.04em}
 .fcard--2 .fcard__txt{padding:calc(var(--u)*49) calc(var(--u)*30) calc(var(--u)*40)}
 .fcard--2 .fcard__art{aspect-ratio:396/319;margin-top:auto;flex:none}
-.fcard--2 .fcard__bg{position:absolute;inset:0}
-.fcard__phone{position:absolute;left:17.4%;bottom:0;width:63.6%;height:auto!important;object-fit:contain!important;transition:transform .7s var(--ease)}
-.fcard--2:hover .fcard__phone{transform:translateY(-10px)}
-.fcard--1 .fcard__art img,.fcard--3 .fcard__art img{transition:transform .9s var(--ease)}
-.fcard--1:hover .fcard__art img,.fcard--3:hover .fcard__art img{transform:scale(1.04) translateY(-4px)}
+.fcard__art img{transition:transform .9s var(--ease)}
+.fcard:hover .fcard__art img{transform:scale(1.04) translateY(-4px)}
 
 /* ---------- how it works ---------- */
 .how{padding-top:clamp(40px,5vw,80px)}
@@ -312,3 +309,7 @@ ul{list-style:none}
   .js .reveal{opacity:1;transform:none}
   .foot__word span{transform:none}
 }
+
+/* arch sticker built natively — no baked-in background */
+.arch{display:block;aspect-ratio:146/71;background:linear-gradient(180deg,#ef4f05,#dde2e3);border:1.5px solid #232323;border-radius:100px 100px 0 0;overflow:hidden;height:auto}
+.arch img{position:absolute;left:50%;top:27%;width:34.2%;height:auto;transform:translateX(-50%)}
