@@ -48,9 +48,11 @@
         <img class="hero__bg1" src="assets/hero-bg.webp" alt="" width="1440" height="899" fetchpriority="low" decoding="async">
         <img class="hero__bg2" src="assets/hero-pattern.webp" alt="" width="1440" height="1251" decoding="async">
       </div>
-      <div class="hero__copy">
-        <h1 id="hero-title"><span>Move smarter</span> <span>through your city</span></h1>
-        <p>See nearby transport in real time, compare routes instantly, and stay informed every step of your journey.</p>
+      <div class="hero__copy stack stack--36">
+        <div class="stack stack--16">
+          <h1 id="hero-title"><span>Move smarter</span> <span>through your city</span></h1>
+          <p>See nearby transport in real time, compare routes instantly, and stay informed every step of your journey.</p>
+        </div>
         <a class="dl" href="#download"><span>Download App</span><img src="assets/store-icons.svg" alt="" width="82" height="36"></a>
       </div>
       <figure class="hero__phone"><img src="assets/hero-phone.webp" alt="GoNow app showing a nearby bus arriving in 3–5 minutes" width="531" height="354" fetchpriority="high" decoding="async"></figure>
@@ -140,14 +142,14 @@
 
     <!-- ============ HOW IT WORKS ============ -->
     <section class="how" id="how" aria-labelledby="how-title">
-      <header class="how__head reveal">
+      <header class="how__head stack stack--16 reveal">
         <span class="tag"><img src="assets/tag-icon.svg" alt="" width="20" height="20">How it works</span>
         <h2 id="how-title">Simple. Structured. Smart.</h2>
       </header>
 
       <div class="step step--1">
         <img class="step__pat step__pat--l" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async">
-        <div class="step__txt reveal"><span class="step__n">Step 1</span><h3>Find Your Route</h3><p>Open GoNow to see nearby buses and available routes in real time. Choose the option that best fits your destination and timing.</p></div>
+        <div class="step__txt stack stack--20 reveal"><div class="stack stack--16"><span class="step__n">Step 1</span><h3>Find Your Route</h3></div><p>Open GoNow to see nearby buses and available routes in real time. Choose the option that best fits your destination and timing.</p></div>
         <div class="step__img"><img class="step__pat" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async"><img class="step__pic" data-parallax src="assets/how-1.webp" alt="" loading="lazy" decoding="async"></div>
       </div>
 
@@ -166,12 +168,12 @@
             </svg>
           </div>
         </div>
-        <div class="step__txt reveal"><span class="step__n">Step 2</span><h3>Track Your Ride</h3><p>Follow your bus live on the map with clear route guidance and estimated arrival times, so you always know where you are and what’s next.</p></div>
+        <div class="step__txt stack stack--20 reveal"><div class="stack stack--16"><span class="step__n">Step 2</span><h3>Track Your Ride</h3></div><p>Follow your bus live on the map with clear route guidance and estimated arrival times, so you always know where you are and what’s next.</p></div>
       </div>
 
       <div class="step step--3">
         <img class="step__pat step__pat--l" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async">
-        <div class="step__txt reveal"><span class="step__n">Step 3</span><h3>Arrive with Confidence</h3><p>Get notified as you approach your stop and complete your journey smoothly—no confusion, no guesswork.</p></div>
+        <div class="step__txt stack stack--20 reveal"><div class="stack stack--16"><span class="step__n">Step 3</span><h3>Arrive with Confidence</h3></div><p>Get notified as you approach your stop and complete your journey smoothly—no confusion, no guesswork.</p></div>
         <div class="step__img"><img class="step__pat" src="assets/how-pattern.webp" alt="" loading="lazy" decoding="async"><img class="step__pic" data-parallax src="assets/how-3.webp" alt="" loading="lazy" decoding="async"></div>
       </div>
     </section>
@@ -180,9 +182,9 @@
     <section class="voices" id="voices" aria-labelledby="voices-title">
       <div class="voices__inner">
         <div class="voices__copy reveal">
-          <h2 id="voices-title">Voices from the City</h2>
-          <p>See how GoNow makes everyday movement easier.</p>
-          <div class="voices__nav" aria-hidden="true"><button type="button" data-dir="-1" tabindex="-1">←</button><button type="button" data-dir="1" tabindex="-1">→</button></div>
+          <div class="stack stack--16"><h2 id="voices-title">Voices from the City</h2>
+          <p>See how GoNow makes everyday movement easier.</p></div>
+          <div class="voices__nav"><button type="button" data-dir="-1" aria-label="Previous testimonial"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-dir="1" aria-label="Next testimonial"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
         </div>
         <div class="voices__track" tabindex="0" role="group" aria-label="Testimonials, scroll horizontally">
           <figure class="quote reveal"><blockquote>“GoNow makes commuting less stressful. I know what bus to take and exactly when it’s arriving.”</blockquote><figcaption><img src="assets/avatar.webp" alt="" width="50" height="51" loading="lazy"><span><b>Ijeoma Solomon</b><i>Daily Commuter</i></span></figcaption></figure>
@@ -194,7 +196,7 @@
 
     <!-- ============ FAQ ============ -->
     <section class="faq wrap" id="faq" aria-labelledby="faq-title">
-      <header class="faq__head reveal"><h2 id="faq-title">FAQ</h2><p>Quick answers to help you get started with GoNow.</p></header>
+      <header class="faq__head stack stack--16 reveal"><h2 id="faq-title">FAQ</h2><p>Quick answers to help you get started with GoNow.</p></header>
       <div class="faq__list reveal" style="--d:100ms">
         <div class="qa open">
           <h3><button type="button" aria-expanded="true" aria-controls="a1" id="q1"><span>What is GoNow?</span><img src="assets/faq-open.svg" alt="" width="30" height="28"></button></h3>

@@ -92,4 +92,13 @@
   document.querySelectorAll('.voices__nav button').forEach((b) => b.addEventListener('click', () => {
     track.scrollBy({ left: +b.dataset.dir * 420, behavior: reduce ? 'auto' : 'smooth' });
   }));
+  const navBtns = [...document.querySelectorAll('.voices__nav button')];
+  const syncNav = () => {
+    const max = track.scrollWidth - track.clientWidth - 2;
+    navBtns[0].disabled = track.scrollLeft <= 2;
+    navBtns[1].disabled = track.scrollLeft >= max;
+  };
+  track.addEventListener('scroll', syncNav, { passive: true });
+  addEventListener('resize', syncNav);
+  syncNav();
 })();
