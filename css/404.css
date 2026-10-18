@@ -1,0 +1,20 @@
+/* 404 — uses tokens/components from styles.css */
+.nf{min-height:100svh}
+.nf__main{position:relative;min-height:100svh;display:grid;place-items:center;padding:clamp(110px,14vw,160px) var(--px) clamp(48px,6vw,80px);overflow:hidden}
+.nf__bg{position:absolute;inset:0;pointer-events:none}
+.nf__bg img{width:100%;height:100%;object-fit:cover;opacity:.08}
+.nf__card{position:relative;display:flex;flex-direction:column;align-items:center;gap:24px;max-width:640px;text-align:center;animation:fadeUp .9s var(--ease) both}
+.nf__num{display:flex;align-items:center;justify-content:center;gap:clamp(4px,1vw,12px);font-size:clamp(110px,22vw,260px);font-weight:700;line-height:.9;letter-spacing:-.06em;color:var(--green-d)}
+.nf__bus{display:grid;place-items:center;width:.62em;height:.62em;transition:transform .25s ease-out;animation:bob 5s ease-in-out infinite}
+.nf__bus svg{width:100%;height:100%}
+.nf__spin{transform-origin:60px 60px;animation:spin 14s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.nf h1{font-size:clamp(28px,3.4vw,40px);font-weight:600;line-height:1.15;letter-spacing:-.04em}
+.nf__card>p{max-width:480px;font-size:clamp(16px,1.4vw,20px);line-height:1.5;color:var(--body);letter-spacing:-.02em}
+.nf__actions{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:center;margin-top:8px}
+.nf__link{position:relative;font-size:18px;font-weight:500;color:var(--green-d)}
+.nf__link::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nf__link:hover::after{transform:scaleX(1);transform-origin:left}
+.nf__routes{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
+.nf__routes a{display:block;padding:9px 16px;border-radius:999px;background:#fff;border:1px solid rgba(41,45,50,.1);font-size:15px;font-weight:500;transition:background .3s,color .3s,transform .35s var(--ease),border-color .3s}
+.nf__routes a:hover{background:var(--green);color:#fff;border-color:var(--green);transform:translateY(-3px)}

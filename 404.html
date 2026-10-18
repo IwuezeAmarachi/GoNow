@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — GoNow</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f4f4f4">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="icon" href="/assets/foot-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/404.css">
+</head>
+<body class="nf">
+  <header class="hdr is-solid">
+    <div class="hdr__inner">
+      <a class="hdr__logo" href="/" aria-label="GoNow home"><img src="/assets/logo.svg" alt="GoNow" width="130" height="30"></a>
+      <div class="hdr__right"><a class="pill-dl" href="/#download">Download App</a></div>
+    </div>
+  </header>
+
+  <main class="nf__main">
+    <div class="nf__bg" aria-hidden="true"><img src="/assets/hero-pattern.webp" alt=""></div>
+
+    <section class="nf__card" aria-labelledby="nf-title">
+      <span class="tag"><img src="/assets/tag-icon.svg" alt="" width="20" height="20">Error 404</span>
+
+      <div class="nf__num" aria-hidden="true">
+        <span>4</span>
+        <span class="nf__bus">
+          <svg viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="">
+            <circle cx="60" cy="60" r="56" fill="none" stroke="#08a452" stroke-width="6"/>
+            <circle cx="60" cy="60" r="38" fill="none" stroke="#08a452" stroke-width="3" stroke-dasharray="6 7" class="nf__spin"/>
+            <rect x="34" y="36" width="52" height="40" rx="9" fill="#08a452"/>
+            <rect x="40" y="42" width="18" height="14" rx="3" fill="#f4f4f4"/><rect x="62" y="42" width="18" height="14" rx="3" fill="#f4f4f4"/>
+            <circle cx="46" cy="80" r="6" fill="#039344"/><circle cx="74" cy="80" r="6" fill="#039344"/>
+          </svg>
+        </span>
+        <span>4</span>
+      </div>
+
+      <h1 id="nf-title">Looks like you missed your stop.</h1>
+      <p>The page you’re looking for has moved, or never existed. Let’s get you back on the right route.</p>
+
+      <div class="nf__actions">
+        <a class="dl" href="/"><span>Back to home</span></a>
+        <a class="nf__link" href="/#faq">Visit the FAQ</a>
+      </div>
+
+      <ul class="nf__routes" aria-label="Popular routes">
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#how">How it works</a></li>
+        <li><a href="/#voices">Testimonials</a></li>
+        <li><a href="/#download">Download</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="/js/lenis.min.js" defer></script>
+  <script>
+    // lightweight smooth scroll + cursor-follow tilt on the bus badge
+    window.addEventListener('DOMContentLoaded', function () {
+      var bus = document.querySelector('.nf__bus');
+      if (!bus || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      addEventListener('pointermove', function (e) {
+        var x = (e.clientX / innerWidth - .5) * 18, y = (e.clientY / innerHeight - .5) * 18;
+        bus.style.transform = 'translate(' + x + 'px,' + y + 'px) rotate(' + x * .6 + 'deg)';
+      }, { passive: true });
+    });
+  </script>
+</body>
+</html>
