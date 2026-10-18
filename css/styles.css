@@ -313,3 +313,6 @@ ul{list-style:none}
 /* arch sticker built natively — no baked-in background */
 .arch{display:block;aspect-ratio:146/71;background:linear-gradient(180deg,#ef4f05,#dde2e3);border:1.5px solid #232323;border-radius:100px 100px 0 0;overflow:hidden;height:auto}
 .arch img{position:absolute;left:50%;top:27%;width:34.2%;height:auto;transform:translateX(-50%)}
+
+/* Apple mark is black on the light button */
+.dl--light .dl__icons img[src*="appstore"]{filter:brightness(0)}
